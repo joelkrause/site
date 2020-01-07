@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../templates/layout"
+import SEO from "../components/global/seo"
 
 // ICONS
 import { FaTwitter, FaCodepen, FaGithub, FaDev } from 'react-icons/fa';
@@ -7,6 +8,7 @@ import { FaTwitter, FaCodepen, FaGithub, FaDev } from 'react-icons/fa';
 const Page = () => {
     return (
     <Layout>
+    <SEO title="Home" />
     <div className="home__intro">
         <div className="home__intro-content">
         <h1>Hey, I'm Joel</h1>
