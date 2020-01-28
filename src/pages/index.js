@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../templates/layout"
 import SEO from "../components/global/seo"
 import Noteworthy from "../components/noteworthy/noteworthy"
-import GitHub from "../components/github"
 
 // ICONS
 import { FaTwitter, FaCodepen, FaGithub, FaDev } from 'react-icons/fa';
@@ -32,7 +31,6 @@ const Page = () => {
             <p>Feel free to shoot me an <a href="#">email</a></p>
         </div>
     </div>
-    <GitHub />
     </Layout>
     )
 }
