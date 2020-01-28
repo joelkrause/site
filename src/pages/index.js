@@ -29,7 +29,7 @@ const Page = () => {
         <div className="home__intro-contact">
             <h3>Get In Touch</h3>
             <p>If you have any questions, or need advice, my inbox is always open!.</p>
-            <p>Feel free to shoot me an <a href="#">email</a></p>
+            <p>Feel free to shoot me an <a href="mailto:joel.krause8@gmail.com">email</a></p>
         </div>
     </div>
     </Layout>
