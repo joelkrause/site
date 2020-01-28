@@ -14,11 +14,5 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-github-pinned`,
-      options: {
-        apiToken: `a8af544fd8fe4772d9a97ce9a9bf24cd6cecf42c `
-      }
-    }
   ]
 }
