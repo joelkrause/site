@@ -4,7 +4,7 @@ import SEO from "../components/global/seo"
 import Noteworthy from "../components/noteworthy/noteworthy"
 
 // ICONS
-import { FaTwitter, FaCodepen, FaGithub, FaDev } from 'react-icons/fa';
+import { FaTwitter, FaCodepen, FaGithub, FaDev, FaInstagram } from 'react-icons/fa';
 
 const Page = () => {
     return (
@@ -23,6 +23,7 @@ const Page = () => {
                 <li><a href="https://codepen.com/jkrs" target="_blank"><FaCodepen /></a></li>
                 <li><a href="https://github.com/joelkrause" target="_blank"><FaGithub /></a></li>
                 <li><a href="https://dev.to/joel" target="_blank"><FaDev /></a></li>
+<li><a href="https://instagram.com/developer_joel" target="_blank"><FaInstagram /></a></li>
             </ul>
         </div>
         <div className="home__intro-contact">
