@@ -1,18 +1,16 @@
 @import url("https://rsms.me/inter/inter.css");
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap');
 
 body {
   background: #000;
   color: #fff;
   max-height: 100vh;
   padding: 7.5vw;
-  font-family: "Inter", sans-serif;
-  font-size: 1.11rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
   line-height: 1.85rem;
-  font-weight: 375;
+  font-weight: 400;
   transition: all 0.35s;
-  @supports (font-variation-settings: normal) {
-    font-family: "Inter var", sans-serif;
-  }
 }
 
 a {
