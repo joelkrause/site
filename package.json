@@ -17,7 +17,7 @@
     "gatsby": "^2.18.12",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-sass": "^2.1.26",
-    "gatsby-source-github-pinned": "0.0.4",
+    "gatsby-source-dev": "^0.1.4",
     "gatsby-transformer-remark": "^2.6.50",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",

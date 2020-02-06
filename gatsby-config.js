@@ -14,5 +14,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-dev`,
+      options: {
+        // This is your username on Dev.to
+        username: `joel`
+      }
+    }
   ]
 }
