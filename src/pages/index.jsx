@@ -7,9 +7,9 @@ import LatestPosts from '../components/LatestPosts'
 const Page = () => {
     return (
     <Layout>
-    <SEO title="Home" />
-    <HomeIntro />
-    <LatestPosts />
+        <SEO title="Home" />
+        <HomeIntro />
+        <LatestPosts />
     </Layout>
     )
 }

@@ -11,9 +11,6 @@ const HomeIntro = () => {
         <p>I'm a passionate frontend web developer from Melbourne.</p>
         <p>I work at <a href="https://raak.com.au" target="_blank">Raak</a>, building headless WordPress sites with Gatsby.</p>
         </HomeIntroContent>
-<HomeProfilePic>
-    <img src="../lib/images/profile_pic.jpg" />
-</HomeProfilePic>
         <SocialWrapper>
             <h3>Socialise with me</h3>
             <SocialList>
@@ -55,6 +52,7 @@ padding-right:5vw;
 const SocialList = styled.ul`
 list-style: none;
 padding: 0;
+margin:1rem 0 0;
 display: flex;
 li{
     &:not(:last-of-type){

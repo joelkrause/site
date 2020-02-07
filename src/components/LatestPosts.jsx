@@ -24,13 +24,17 @@ const DEV_QUERY = graphql`
 
 const LatestPosts = () => (
     <>
-        <h3>Latest Posts</h3>
+        <ArticleHeader>
+            <h2>Latest Posts</h2>
+            <a href="https://dev.to/joel" target="_blank" rel="noopener noreferrer">See All Posts</a>
+        </ArticleHeader>
         <Articles>
         <StaticQuery
             query={DEV_QUERY}
             render={data => {
                 return (
                     <>
+                    {console.log(JSON.stringify(data, null, 4))}
                     {data.allDevArticles.edges.map(node => {
                         return(
                             <>
@@ -41,14 +45,13 @@ const LatestPosts = () => (
                                     <ArticleDate>
                                         Posted {node.node.article.published_at}
                                     </ArticleDate>
-                                    <ArticleComments>
+                                    {/* <ArticleComments>
                                         {node.node.article.comments_count}
-                                    </ArticleComments>
+                                    </ArticleComments> */}
                                 </Article>
                             </>
                         )
                     })}
-                    <pre>{JSON.stringify(data, null, 4)}</pre>
                     </>
                 )
             }}
@@ -71,6 +74,12 @@ padding:0 0 3rem;
 &:first-of-type{
     padding-top:3rem;
 }
+`
+
+const ArticleHeader = styled.header`
+display:flex;
+justify-content:space-between;
+align-items:center;
 `
 
 const ArticleTitle = styled.div`
