@@ -18,8 +18,7 @@ const DEV_QUERY = graphql`
         }
       }
     }
-  }
-  
+  } 
 `
 
 const LatestPosts = () => (
@@ -45,9 +44,6 @@ const LatestPosts = () => (
                                     <ArticleDate>
                                         Posted {node.node.article.published_at}
                                     </ArticleDate>
-                                    {/* <ArticleComments>
-                                        {node.node.article.comments_count}
-                                    </ArticleComments> */}
                                 </Article>
                             </>
                         )
