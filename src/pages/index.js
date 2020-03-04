@@ -14,7 +14,7 @@ const Page = () => {
         <div className="home__intro-content">
         <h1>Hey, I'm Joel</h1>
         <p>I'm a passionate frontend web developer from Melbourne.</p>
-        <p>I work at <a href="https://raak.com.au" target="_blank">Raak</a>, building headless WordPress sites with Gatsby.</p>
+        <p>I work at <a href="https://raak.com.au" target="_blank">Raak</a>, building headless WordPress sites with Nuxt.js.</p>
         </div>
         <div className="home__intro-social">
             <h3>Socialise with me</h3>
