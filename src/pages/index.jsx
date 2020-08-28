@@ -1,7 +1,9 @@
 import React from "react"
+import styled from "styled-components"
+
 import Layout from "../templates/layout"
 import SEO from "../components/global/seo"
-import styled from "styled-components"
+import DevTo from "../components/dev-to"
 
 
 // ICONS
@@ -33,6 +35,7 @@ const Page = () => {
             <p>Feel free to shoot me an <a href="mailto:joel.krause8@gmail.com">email</a></p>
         </HeroDetails>
     </Hero>
+    <DevTo />
     </Layout>
     )
 }
@@ -68,7 +71,7 @@ const HeroDetailsList = styled.ul`
     &:first-of-type{
         padding-right:5vw;
     }
-    
+
     li {
         &:not(:last-of-type) {
           margin-right: 1rem;
