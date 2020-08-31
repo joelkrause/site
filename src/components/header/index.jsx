@@ -1,13 +1,31 @@
 import React from 'react'
+import styled from "styled-components"
 
 const Header = () => {
     return (
     <>
-    <header className="site__header">
-        Joel Krause
-    </header>
+    <HeaderWrapper className="site__header">
+        <HeaderTitle>joel krause</HeaderTitle>
+        <HeaderTitle>joel krause</HeaderTitle>
+        <HeaderTitle>joel krause</HeaderTitle>
+        <HeaderTitle>joel krause</HeaderTitle>
+    </HeaderWrapper>
     </>
     )
 }
 
 export default Header
+
+const HeaderWrapper = styled.header`
+    font-family:'Recursive';
+    font-size:10vw;
+    font-variation-settings: "wght" 900;
+    text-transform:uppercase;
+    display:flex;
+    white-space:nowrap;
+    overflow:hidden;
+    line-height:1;
+`
+const HeaderTitle = styled.div`
+    padding:0 2vw;
+`

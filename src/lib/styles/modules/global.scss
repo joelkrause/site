@@ -1,5 +1,14 @@
 @import url('https://rsms.me/inter/inter.css');
 
+@font-face {
+  font-family: 'Soulcraft Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Soulcraft Regular'), url('/Soulcraft.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap');
+
 html {
   font-family: 'Inter', sans-serif;
 }
@@ -14,7 +23,6 @@ body {
   background: #000;
   color: #fff;
   max-height: 100vh;
-  padding: 7.5vw;
   font-size: 1.15rem;
   line-height: 1.85rem;
   font-weight: 300;
