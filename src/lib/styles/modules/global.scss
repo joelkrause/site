@@ -1,32 +1,21 @@
 @import url('https://rsms.me/inter/inter.css');
 
-@font-face {
-  font-family: 'Soulcraft Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Soulcraft Regular'), url('/Soulcraft.woff') format('woff');
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap');
-
-html {
-  font-family: 'Inter', sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Inter var', sans-serif;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 body {
   background: #000;
   color: #fff;
   max-height: 100vh;
-  font-size: 1.15rem;
+  font-family: 'DM Sans';
+  font-size: 1.35rem;
   line-height: 1.85rem;
   font-weight: 300;
   transition: all 0.35s;
+}
+
+* {
+  cursor: none !important;
 }
 
 a {
@@ -37,4 +26,51 @@ i,
 svg {
   margin-right: 1rem;
   font-size: 2rem;
+}
+
+.mouse-follow {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  user-select: none;
+  touch-action: none;
+  pointer-events: none;
+  cursor: none !important;
+
+  .inside {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .text {
+      margin-left: 15px;
+      transition: all 0.35s;
+      opacity: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 14px;
+      color: white;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    .circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background:#fff;
+      mix-blend-mode: difference;
+      z-index: 5;
+      transition: all 0.35s;
+
+      &.active {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
 }

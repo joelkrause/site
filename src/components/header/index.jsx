@@ -22,6 +22,7 @@ const HeaderWrapper = styled.header`
     font-variation-settings: "wght" 900;
     text-transform:uppercase;
     display:flex;
+    justify-content:center;
     white-space:nowrap;
     overflow:hidden;
     line-height:1;

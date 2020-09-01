@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import MouseTooltip from 'react-sticky-mouse-tooltip';
 
 import Layout from "../templates/layout"
 import SEO from "../components/global/seo"
@@ -14,11 +15,15 @@ const Page = () => {
     <Layout>
     <SEO title="Home" />
     <PageWrapper>
+        <MouseTooltip visible="true" offsetX={-15} offsetY={-15} className="mouse-follow">
+            <div className="inside">
+                <span className="circle"></span>
+            </div>
+        </MouseTooltip>
         <Hero className="home__intro">
             <HeroContent className="home__intro-content">
-                <h1>Hey, I'm Joel</h1>
-                <p>I'm a passionate frontend web developer from Melbourne.</p>
-                <p>I work at <a href="https://raak.com.au" target="_blank">Raak</a> as a front end web developer, building headless sites with Nuxt.js, WordPress, StoryBlok and Shopify.</p>
+                <p>I'm Joel and I'm a passionate frontend web developer from Melbourne.</p>
+                <p>I work at <a href="https://raak.com.au" target="_blank">Raak Creative</a> as a front end web developer, building headless sites with Nuxt.js, WordPress, StoryBlok and Shopify.</p>
             </HeroContent>
             <HeroDetails className="home__intro-social">
                 <h3>Socialise with me</h3>
